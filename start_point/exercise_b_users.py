@@ -75,9 +75,11 @@ avril_lottery.append(7)
 users["Erik"]["home_town"] = "edinburgh"
 print(users["Erik"]["home_town"])
 # 9. Add a pet dog to Erik called "fluffy"
-# users["Erik"]["pets"]["name"]= "fluffy"
-# users["Erik"]["pets"]["species"] = "dog"
-# 10. Add another person to the users dictionary
-users["person"] = "john"
-print(users)
+users["Erik"]["pets"].append({"name" : "fluffy", "species" : "dog"})
 
+# 10. Add another person to the users dictionary
+users["john"] = {
+  "twitter" : "twitter name",
+  "lottery number" : 1236734,
+  "hometown" : "edinburgh"
+}
